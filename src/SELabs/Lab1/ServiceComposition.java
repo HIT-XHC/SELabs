@@ -257,7 +257,7 @@ public void getNodesCandidateServices()
   {
   	List<CandidateService> Result= new ArrayList<CandidateService>();   //保存结果
   	
-  	for(int j=0;j<50;j++)
+  	for(int j=0;j<100;j++)
   	{
   		Result.add(this.NodesCandidateServices.get(i).get(j));
   		
@@ -267,6 +267,7 @@ public void getNodesCandidateServices()
   }
 	   
   this.NodesCandidateServices=tmpResult;
+  
 }
 
 
@@ -416,8 +417,8 @@ public void runSC(ServiceComposition NewSC)
 
 	//从文件中获取需求，参数代表了第几个需求
 	NewSC.getReq(lineNumber);
-	System.out.println(NewSC.reqPrice);
-	System.out.println(NewSC.reqReliability);
+	System.out.println("QoS价格约束为: "+NewSC.reqPrice);
+	System.out.println("QoS可靠性约束为: "+NewSC.reqReliability);
 	
 	//读取流程
 	NewSC.getProcess(lineNumber);
