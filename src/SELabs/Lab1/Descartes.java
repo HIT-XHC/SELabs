@@ -1,5 +1,7 @@
 package SELabs.Lab1;
-//B3 Branch
+//B3 branch
+
+//B3
 
 /*
  * 网上找到的一个笛卡尔乘积算法示例
